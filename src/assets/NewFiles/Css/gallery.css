@@ -1,0 +1,136 @@
+/* .gallery-wrapper {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  grid-gap: 20px; 
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
+/* gallery.css */
+
+.gallery-wrapper {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-heading {
+  font-size: 4em;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.gallery-container {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 250px; /* Set a fixed height for uniformity */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%; /* Ensure images fill the container */
+  object-fit: cover; /* Crop images to fit the container */
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 223, 0, 0.8); /* Yellowish background */
+  color: #333;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1em;
+  font-weight: bold;
+}
